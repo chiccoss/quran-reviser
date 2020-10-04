@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/professorFragment"
-        android:name="fr.lpiem.sweettodolist.main.presentation.ProfessorFragment"
+        android:name="fr.sohayb.quranreviser.main.presentation.ProfessorFragment"
         tools:layout="@layout/fragment_professor">
 
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/addSequenceFragment"
-        android:name="fr.lpiem.sweettodolist.main.presentation.AddSequenceFragment"
+        android:name="fr.sohayb.quranreviser.main.presentation.AddSequenceFragment"
         tools:layout="@layout/fragment_ajout_sequence" >
 
         <action
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/createSequenceItemFragment"
-        android:name="fr.lpiem.sweettodolist.main.presentation.CreateSequenceItem"
+        android:name="fr.sohayb.quranreviser.main.presentation.CreateSequenceItem"
         tools:layout="@layout/fragment_create_sequence_item" />
 
 
