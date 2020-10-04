@@ -11,8 +11,8 @@ import fr.sohayb.quranreviser.app.models.Sequence
 import kotlinx.android.synthetic.main.item_sequence.view.*
 
 
-class SequenceAdapter(val onClickResultEvent: (Sequence) -> Unit,val onClickItemResultEvent: (Sequence) -> Unit) :
-    ListAdapter<Sequence, SequenceAdapter.SequenceViewHolder>(
+class TafseerAdapter(val onClickResultEvent: (Sequence) -> Unit,val onClickItemResultEvent: (Sequence) -> Unit) :
+    ListAdapter<Sequence, TafseerAdapter.SequenceViewHolder>(
         DiffItemCallback()
     ) {
 

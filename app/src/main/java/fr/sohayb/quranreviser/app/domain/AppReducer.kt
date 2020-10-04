@@ -2,10 +2,10 @@ package fr.sohayb.quranreviser.app.domain
 
 import fr.sohayb.quranreviser.base.domain.ReducerType
 import fr.sohayb.quranreviser.base.domain.ResultType
-import fr.sohayb.quranreviser.main.domain.MainReducer
+import fr.sohayb.quranreviser.main.domain.QuranReducer
 
 class AppReducer(
-    private val exampleReducer: MainReducer,
+    private val quranReducer: QuranReducer,
     private val initialState: AppState
 ) : ReducerType<AppState> {
 
@@ -16,7 +16,7 @@ class AppReducer(
             is AppResult.ResetAppState -> initialState
 
             else -> AppState(
-                exampleState = exampleReducer.reduce(result, state.exampleState)
+                quranState = quranReducer.reduce(result, state.quranState)
             )
         }
     }

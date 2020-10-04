@@ -2,20 +2,19 @@ package fr.sohayb.quranreviser.main.injection
 
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStoreOwner
-import fr.sohayb.quranreviser.main.data.MainRepository
-import fr.sohayb.quranreviser.main.data.TestRepositoryImpl
-import fr.sohayb.quranreviser.main.domain.MainProcessor
-import fr.sohayb.quranreviser.main.domain.MainReducer
+import fr.sohayb.quranreviser.main.data.QuranRepository
+import fr.sohayb.quranreviser.main.domain.QuranProcessor
+import fr.sohayb.quranreviser.main.domain.QuranReducer
 import fr.sohayb.quranreviser.main.presentation.MainViewModel
 import org.koin.dsl.module
 
-val MainModule = module {
+val QuranModule = module {
 
-    single<MainRepository> { TestRepositoryImpl() }
+    single { QuranRepository(get(),get()) }
 
-    single { MainProcessor(get()) }
+    single { QuranProcessor(get(),get()) }
 
-    single { MainReducer() }
+    single { QuranReducer() }
 
     factory { (owner: ViewModelStoreOwner) ->
         ViewModelProvider(owner, MainViewModel.Factory(get()))

@@ -6,81 +6,146 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dc3ad96-9c20-4c35-b42b-8d22529edec9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sohayb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_7_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/QuranReviser.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/TLSSocketFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/data/PreferencesDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/data/SavedFilterPreferences.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/data/VerseTafseer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_2_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_2_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_2_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_2_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_extensions_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_extensions_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_ktx_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_ktx_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_ktx_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_ktx_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_ktx_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_ktx_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_service_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_service_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_ktx_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_ktx_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_ktx_2_3_0_alpha06_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_ktx_2_3_0_alpha06_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_3_0_alpha01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_3_0_alpha01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_timber_timber_4_7_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_timber_timber_4_7_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_7_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_2_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_2_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ArchitectureTemplate.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/fr/lpiem/sweettodolist/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/fr/sohayb/quranreviser/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/analytics/data/AnalyticsEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/analytics/data/AnalyticsEvent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/analytics/domain/AnalyticsProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/analytics/domain/AnalyticsProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/analytics/injection/AnalyticsModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/analytics/injection/AnalyticsModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/api/NetworkService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/NetworkService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/api/ResponseHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/ResponseHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/api/data/NetworkDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/data/NetworkDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/api/query/AddNewCarData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/query/AddNewCarData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/api/response/BookingResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/response/BookingResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/api/serializer/BooleanIntSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/serializer/BooleanIntSerializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/database/AppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/database/AppDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/database/DataBaseFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/database/DataBaseFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/database/RoomDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/database/RoomDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/database/daos/SequenceDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/database/daos/SequenceDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/database/daos/UserDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/database/daos/UserDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/domain/AppController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/domain/AppProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/domain/AppReducer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppReducer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/domain/AppResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/domain/AppState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/error/ErrorInterceptor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/error/ErrorInterceptor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/error/WSError.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/error/WSError.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/injection/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/injection/DataSourceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/DataSourceModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/injection/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/models/Sequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/models/Sequence.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/models/SequenceItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/models/SequenceItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/models/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/models/User.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/presentation/AppViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/presentation/AppViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/app/presentation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/presentation/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/domain/ActionType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/domain/ActionType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/domain/ProcessorType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/domain/ProcessorType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/domain/ReducerType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/domain/ReducerType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/domain/ResultType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/domain/ResultType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/domain/StateType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/domain/StateType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/error/Error.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/error/Error.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/presentation/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/presentation/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/presentation/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/presentation/BaseFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/presentation/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/presentation/BaseViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/base/util/OneTimeEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/base/util/OneTimeEvent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/adapter/SequenceAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/adapter/SequenceAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/adapter/SequenceItemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/adapter/SequenceItemAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/data/ExampleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/data/ExampleRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/domain/ExampleAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/domain/ExampleProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/domain/ExampleReducer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleReducer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/domain/ExampleResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/domain/ExampleState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/injection/ExampleModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/injection/ExampleModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/presentation/AddSequenceFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/AddSequenceFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/presentation/AddUserFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/AddUserFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/presentation/CreateSequenceItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/CreateSequenceItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/presentation/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/MainViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/lpiem/sweettodolist/main/presentation/ProfessorFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/ProfessorFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/analytics/domain/AnalyticsProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/analytics/domain/AnalyticsProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/NetworkService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/NetworkService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/data/NetworkDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/data/NetworkDataSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/response/BookingResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/api/response/VerseTafseerResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppReducer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppReducer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/domain/AppState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/DataSourceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/DataSourceModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/injection/NetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/presentation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/app/presentation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/adapter/SequenceAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/adapter/TafseerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/adapter/SequenceItemAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/data/ExampleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/data/QuranRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/QuranAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/QuranProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleReducer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/QuranReducer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/QuranResult.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/ExampleState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/domain/QuranState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/injection/ExampleModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/injection/QuranModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/AddSequenceFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/AddUserFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/CreateSequenceItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/ProfessorFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser/main/presentation/ProfessorFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create_sequence_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_sequence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_sequence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_sequence_item.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/fr/lpiem/sweettodolist/app/MockProcessorResultCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/fr/sohayb/quranreviser/app/MockProcessorResultCallback.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/fr/lpiem/sweettodolist/experimental/ExperimentalProcessorUnitTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/fr/sohayb/quranreviser/experimental/ExperimentalProcessorUnitTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/fr/lpiem/sweettodolist/main/ExampleProcessorUnitTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/fr/sohayb/quranreviser/main/ExampleProcessorUnitTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/fr/lpiem/sweettodolist/main/mocks/MockExampleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/fr/sohayb/quranreviser/main/mocks/MockExampleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Android_Accelerated_x86_Oreo" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="e6906afe" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -96,9 +161,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -113,23 +178,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/fr/sohayb/quranreviser" />
     <property name="settings.editor.selected.configurable" value="memory.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="fr.sohayb.quranreviser.app.api.response" />
+      <recent name="fr.sohayb.quranreviser.app.data" />
       <recent name="fr.lpiem.architecturetemplate.main.adapter" />
       <recent name="fr.myluckyday.architecturetemplate.example.data.models" />
       <recent name="fr.myluckyday.architecturetemplate.example.data.database" />
-      <recent name="fr.myluckyday.architecturetemplate.example.data" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.sohayb.quranreviser.app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sohayb\Desktop\Projects LP IEM\quran-reviser\app\src\main\java\fr\sohayb\quranreviser" />
       <recent name="C:\Users\sohayb\Desktop\Projects LP IEM\lptodolist\lptodolist\app\src\main\res\layout" />
       <recent name="C:\Users\sohayb\Desktop\Projects LP IEM\lptodolist\lptodolist\app\src\main\res\values" />
       <recent name="C:\Users\sohayb\Desktop\Projects LP IEM\lptodolist\lptodolist\app\src\main\java\fr\myluckyday\architecturetemplate\base" />
       <recent name="C:\Users\sohayb\Desktop\Projects LP IEM\lptodolist\lptodolist\app\src\main\java\fr\myluckyday\architecturetemplate\app" />
-      <recent name="C:\Users\sohayb\Desktop\Projects LP IEM\lptodolist\lptodolist\app\src\main\java\fr\myluckyday\architecturetemplate\app\injection" />
     </key>
   </component>
   <component name="RunManager">
@@ -203,55 +273,83 @@
       <option name="presentableId" value="Default" />
       <updated>1600894554092</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit fix">
+      <created>1601830845583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601830845583</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit fix" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="751" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1600896435278">
+    <state x="751" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1601843983959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="751" y="236" key="#com.intellij.ide.util.MemberChooser/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600896435278" />
+    <state x="751" y="236" key="#com.intellij.ide.util.MemberChooser/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601843983959" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600941769971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1600941769971" />
-    <state x="491" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600938995388">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="514" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601834786974">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600898348191" />
+    <state x="514" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601834786974" />
+    <state x="756" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1601834789141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601834789141" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601838405412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601838405412" />
     <state x="491" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600938995388" />
     <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1600937904031">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1600937904031" />
+    <state x="492" y="114" key="CommitChangelistDialog2" timestamp="1601830839945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="492" y="114" key="CommitChangelistDialog2/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601830839945" />
     <state x="526" y="193" key="FileChooserDialogImpl" timestamp="1601018828816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600897424591" />
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601018828816" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1601054666421">
+    <state width="1877" height="407" key="GridCell.Tab.0.bottom" timestamp="1601844139889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601054666421" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1601054666421">
+    <state width="1877" height="407" key="GridCell.Tab.0.bottom/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601844139889" />
+    <state width="1877" height="407" key="GridCell.Tab.0.center" timestamp="1601844139888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601054666421" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1601054666421">
+    <state width="1877" height="407" key="GridCell.Tab.0.center/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601844139888" />
+    <state width="1877" height="407" key="GridCell.Tab.0.left" timestamp="1601844139888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601054666421" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1601054666421">
+    <state width="1877" height="407" key="GridCell.Tab.0.left/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601844139888" />
+    <state width="1877" height="407" key="GridCell.Tab.0.right" timestamp="1601844139889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601054666421" />
+    <state width="1877" height="407" key="GridCell.Tab.0.right/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601844139889" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1601019862910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601019862910" />
-    <state x="467" y="122" width="737" height="606" key="find.popup" timestamp="1600937512065">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1601841481607">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="737" height="606" key="find.popup/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600900573635" />
+    <state x="656" y="252" width="737" height="606" key="find.popup/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601841481607" />
     <state x="467" y="122" width="737" height="606" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600937512065" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1601840988716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1366.110.1366.728/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601840988716" />
   </component>
 </project>

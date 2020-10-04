@@ -5,7 +5,8 @@ import fr.sohayb.quranreviser.analytics.injection.AnalyticsModule
 import fr.sohayb.quranreviser.app.injection.AppModule
 import fr.sohayb.quranreviser.app.injection.DataSourceModule
 import fr.sohayb.quranreviser.app.database.DataBaseFactory.Companion.initialize
-import fr.sohayb.quranreviser.main.injection.MainModule
+import fr.sohayb.quranreviser.app.injection.NetworkModule
+import fr.sohayb.quranreviser.main.injection.QuranModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -28,7 +29,8 @@ class App : Application() {
             androidContext(this@App)
             modules(
                 AppModule,
-                MainModule,
+                QuranModule,
+                NetworkModule,
                 DataSourceModule,
                 AnalyticsModule
             )

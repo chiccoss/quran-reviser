@@ -8,7 +8,7 @@ import fr.sohayb.quranreviser.app.domain.AppProcessor
 import fr.sohayb.quranreviser.app.domain.AppReducer
 import fr.sohayb.quranreviser.app.domain.AppState
 import fr.sohayb.quranreviser.app.presentation.AppViewModel
-import fr.sohayb.quranreviser.main.domain.MainProcessor
+import fr.sohayb.quranreviser.main.domain.QuranProcessor
 import org.koin.dsl.module
 
 val AppModule = module {
@@ -28,7 +28,7 @@ val AppModule = module {
 
     single {
         listOf(
-            get<MainProcessor>(),
+            get<QuranProcessor>(),
             get<AnalyticsProcessor>()
         )
     }
@@ -39,7 +39,7 @@ val AppModule = module {
 
     single {
         AppReducer(
-            exampleReducer = get(),
+            quranReducer = get(),
             initialState = get()
         )
     }

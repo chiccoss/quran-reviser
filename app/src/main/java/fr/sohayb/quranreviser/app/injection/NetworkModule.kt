@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import fr.sohayb.quranreviser.app.api.NetworkService
+import fr.sohayb.quranreviser.app.api.TLSSocketFactory
 import fr.sohayb.quranreviser.app.error.ErrorInterceptor
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
@@ -13,11 +14,16 @@ import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import timber.log.Timber
+import java.security.KeyManagementException
+import java.security.KeyStoreException
+import java.security.NoSuchAlgorithmException
+import javax.net.ssl.X509TrustManager
+
 
 val NetworkModule = module {
 
     single {
-        HttpLoggingInterceptor(object: HttpLoggingInterceptor.Logger {
+        HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
             override fun log(message: String) {
                 Timber.tag("OkHttp").d(message)
             }
@@ -33,20 +39,45 @@ val NetworkModule = module {
     }
 
 
+    single<TLSSocketFactory> {
+        TLSSocketFactory()
+    }
+
+    single<X509TrustManager> {
+        val tlsSocketFactory = TLSSocketFactory()
+
+        tlsSocketFactory.getTrustManager()
+    }
+
+
+
+
     single {
-        OkHttpClient.Builder()
-            .addInterceptor(get<HttpLoggingInterceptor>())
-            .addInterceptor(get<ErrorInterceptor>())
-            .build()
+
+
+            OkHttpClient.Builder()
+                .addInterceptor(get<HttpLoggingInterceptor>())
+                .addInterceptor(get<ErrorInterceptor>())
+                .sslSocketFactory(get(),get())
+                .build()
+            //.connectionSpecs(Collections.singletonList(spec))
+
     }
 
     single<Retrofit> {
-        val url = "BuildConfig.WSUrl"
-        val apiKey = ""
+
+        val url = "https://api.quran-tafseer.com/"
         Retrofit.Builder()
             .client(get())
             .baseUrl(url)
-            .addConverterFactory(Json(JsonConfiguration(ignoreUnknownKeys = true, isLenient = true)).asConverterFactory("application/json".toMediaType()))
+            .addConverterFactory(
+                Json(
+                    JsonConfiguration(
+                        ignoreUnknownKeys = true,
+                        isLenient = true
+                    )
+                ).asConverterFactory("application/json".toMediaType())
+            )
             .build()
     }
 
