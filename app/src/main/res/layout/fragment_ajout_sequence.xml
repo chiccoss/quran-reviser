@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ajoutSequenceBackButton"
+            style="@style/Widget.AppTheme.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Retour"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ajoutUtilisateurValidateButton"
+            style="@style/Widget.AppTheme.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="Valider"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentCreateVorHomeSpeedInfoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="Ajout Liste"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:lines="1"
+            app:layout_constraintEnd_toStartOf="@+id/ajoutUtilisateurValidateButton"
+            app:layout_constraintStart_toEndOf="@+id/ajoutSequenceBackButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fragmentAddSequenceEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="Nom de la liste"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="text"
+            android:lines="1"
+            app:layout_constraintTop_toBottomOf="@id/fragmentCreateVorHomeSpeedInfoTv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentAddSequenceItemsRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="@dimen/margin_medium"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/item_sequence_item"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentAddSequenceEt" />
+
+        <ImageButton
+            android:id="@+id/fragmentAjoutSequenceAddSequenceButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@color/white"
+            android:src="@drawable/ic_switchbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentAddSequenceItemsRv" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentAjoutSequenceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Ajouter un\nproduit"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_xxlarge"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentAjoutSequenceAddSequenceButton"
+            app:layout_constraintStart_toStartOf="@+id/fragmentAjoutSequenceAddSequenceButton"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentAjoutSequenceAddSequenceButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragmentCreateVorHomeSpeedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_green_no_border"
+            android:text="Continuer"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentAjoutSequenceTv" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<resources>
+
+    <declare-styleable name="AppTheme">
+
+
+        <attr name="TextButton" format="reference" />
+
+        <attr name="editTextStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

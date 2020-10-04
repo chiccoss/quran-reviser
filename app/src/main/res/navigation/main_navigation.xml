@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/professorFragment">
+
+    <fragment
+        android:id="@+id/professorFragment"
+        android:name="fr.lpiem.sweettodolist.main.presentation.ProfessorFragment"
+        tools:layout="@layout/fragment_professor">
+
+        <action
+            android:id="@+id/goToAddSequence"
+            app:destination="@id/addSequenceFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addSequenceFragment"
+        android:name="fr.lpiem.sweettodolist.main.presentation.AddSequenceFragment"
+        tools:layout="@layout/fragment_ajout_sequence" >
+
+        <action
+            android:id="@+id/goToAddSequenceItem"
+            app:destination="@id/createSequenceItemFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/createSequenceItemFragment"
+        android:name="fr.lpiem.sweettodolist.main.presentation.CreateSequenceItem"
+        tools:layout="@layout/fragment_create_sequence_item" />
+
+
+</navigation>
