@@ -39,11 +39,11 @@ val NetworkModule = module {
     }
 
 
-    single<TLSSocketFactory> {
+    single {
         TLSSocketFactory()
     }
 
-    single<X509TrustManager> {
+    single {
         val tlsSocketFactory = TLSSocketFactory()
 
         tlsSocketFactory.getTrustManager()
@@ -58,7 +58,7 @@ val NetworkModule = module {
             OkHttpClient.Builder()
                 .addInterceptor(get<HttpLoggingInterceptor>())
                 .addInterceptor(get<ErrorInterceptor>())
-                .sslSocketFactory(get(),get())
+                //.sslSocketFactory(get(),get())
                 .build()
             //.connectionSpecs(Collections.singletonList(spec))
 
@@ -66,7 +66,7 @@ val NetworkModule = module {
 
     single<Retrofit> {
 
-        val url = "https://api.quran-tafseer.com/"
+        val url = "http://api.quran-tafseer.com/"
         Retrofit.Builder()
             .client(get())
             .baseUrl(url)
