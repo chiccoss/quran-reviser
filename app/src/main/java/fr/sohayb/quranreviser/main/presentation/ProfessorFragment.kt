@@ -12,7 +12,7 @@ import fr.sohayb.quranreviser.base.presentation.BaseFragment
 import fr.sohayb.quranreviser.main.adapter.TafseerAdapter
 import fr.sohayb.quranreviser.app.models.Sequence
 import fr.sohayb.quranreviser.main.domain.QuranAction
-import kotlinx.android.synthetic.main.fragment_professor.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class ProfessorFragment : BaseFragment() {
 
@@ -33,7 +33,7 @@ class ProfessorFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_professor,container,false)
+    ): View? = inflater.inflate(R.layout.fragment_home,container,false)
 
 
 

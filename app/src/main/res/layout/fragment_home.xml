@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/fragmentImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@color/white"
+            android:src="@drawable/ic_switchbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentMyEventsTitleTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Mode \nutilisateur"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_xxlarge"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentImageView"
+            app:layout_constraintStart_toStartOf="@+id/fragmentImageView"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentImageView" />
+
+
+        <ImageButton
+            android:id="@+id/fragmentImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:background="@color/white"
+            android:src="@drawable/ic_switchbutton"
+            app:layout_constraintBottom_toBottomOf="@id/fragmentImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fragmentImageView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentMyEventsTitleTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Ajouter \nune liste"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_xxlarge"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentImageView1"
+            app:layout_constraintStart_toStartOf="@+id/fragmentImageView1"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentImageView1" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentMyEventsTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="Listes"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_xxlarge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentMyEventsTitleTv1" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentMyEventsRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="@dimen/margin_medium"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/fragmentMyEventsTitleTv"
+    />
+
+
+        <ImageButton
+            android:id="@+id/fragmentImageViewAdmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@color/white"
+            android:src="@drawable/ic_switchbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentMyEventsRv" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentMyEventsTitleTv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gestion \nutilisateurs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_xxlarge"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentImageViewAdmin"
+            app:layout_constraintStart_toStartOf="@+id/fragmentImageViewAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentImageViewAdmin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
