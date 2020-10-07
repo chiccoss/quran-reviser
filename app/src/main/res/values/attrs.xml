@@ -6,6 +6,10 @@
         <attr name="TextButton" format="reference" />
 
         <attr name="editTextStyle" format="reference" />
+
+        <attr name="bottomBar" format="reference" />
+
+
     </declare-styleable>
 
 </resources>

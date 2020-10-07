@@ -14,10 +14,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import timber.log.Timber
-import java.security.KeyManagementException
-import java.security.KeyStoreException
-import java.security.NoSuchAlgorithmException
-import javax.net.ssl.X509TrustManager
 
 
 val NetworkModule = module {
@@ -49,19 +45,13 @@ val NetworkModule = module {
         tlsSocketFactory.getTrustManager()
     }
 
-
-
-
     single {
-
-
-            OkHttpClient.Builder()
-                .addInterceptor(get<HttpLoggingInterceptor>())
-                .addInterceptor(get<ErrorInterceptor>())
-                //.sslSocketFactory(get(),get())
-                .build()
-            //.connectionSpecs(Collections.singletonList(spec))
-
+        OkHttpClient.Builder()
+            .addInterceptor(get<HttpLoggingInterceptor>())
+            .addInterceptor(get<ErrorInterceptor>())
+            //.sslSocketFactory(get(),get())
+            .build()
+        //.connectionSpecs(Collections.singletonList(spec))
     }
 
     single<Retrofit> {

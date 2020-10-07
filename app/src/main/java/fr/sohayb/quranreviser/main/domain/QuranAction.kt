@@ -5,6 +5,7 @@ import java.net.URL
 
 sealed class QuranAction: ActionType {
 
+    object InitApplication : QuranAction()
     data class GetAyahTafseer(var tafseerId: Int,var suraNumber: Int,var ayahId: Int): QuranAction()
 
     data class GotAyah(val ayah: String): QuranAction()
