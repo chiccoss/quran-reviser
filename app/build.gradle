@@ -1,18 +1,18 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-//apply plugin: 'kotlinx-serialization'
+apply plugin: 'kotlinx-serialization'
 apply plugin: 'koin'
 apply plugin: 'kotlin-kapt'
 
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
-        applicationId "fr.lpiem.sweettodolist"
+        applicationId "fr.sohayb.quranreviser"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -68,12 +68,14 @@ dependencies {
 
 
     //Retrofit
-    implementation "com.squareup.retrofit2:retrofit:2.7.1"
+    implementation "com.squareup.retrofit2:retrofit:2.7.2"
     implementation 'com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.5.0'
     implementation "com.squareup.okhttp3:logging-interceptor:4.3.1"
 
+
     //Gson
     implementation 'com.google.code.gson:gson:2.8.6'
+
 
     //room
     implementation "android.arch.persistence.room:runtime:1.1.1"
