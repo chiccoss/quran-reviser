@@ -6,7 +6,10 @@ import fr.sohayb.quranreviser.base.domain.ActionType
 import fr.sohayb.quranreviser.base.domain.ProcessorResultCallback
 import fr.sohayb.quranreviser.base.domain.ProcessorType
 import fr.sohayb.quranreviser.main.data.QuranRepository
+import kotlinx.coroutines.delay
 
+
+private const val SPLASH_DURATION = 1500L
 class QuranProcessor(
     val quranRepository: QuranRepository,
     private val context: Context
@@ -20,10 +23,18 @@ class QuranProcessor(
                     it.ayahId,
                     next
                 )
+                is QuranAction.InitApplication -> {
+                    initApplication(next)
+                }
 
 
             }
         }
+    }
+
+    private suspend fun initApplication(next: ProcessorResultCallback) {
+        delay(SPLASH_DURATION)
+        next(QuranResult.InitApplication)
     }
 
 

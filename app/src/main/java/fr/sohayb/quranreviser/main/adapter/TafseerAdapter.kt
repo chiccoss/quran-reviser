@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import fr.sohayb.quranreviser.R
 import fr.sohayb.quranreviser.app.models.Sequence
-import kotlinx.android.synthetic.main.item_sequence.view.*
+import kotlinx.android.synthetic.main.item_sura.view.*
 
 
 class TafseerAdapter(val onClickResultEvent: (Sequence) -> Unit,val onClickItemResultEvent: (Sequence) -> Unit) :
@@ -18,7 +18,7 @@ class TafseerAdapter(val onClickResultEvent: (Sequence) -> Unit,val onClickItemR
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SequenceViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_sequence, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_sura, parent, false)
         return SequenceViewHolder(view)
     }
 
@@ -28,10 +28,10 @@ class TafseerAdapter(val onClickResultEvent: (Sequence) -> Unit,val onClickItemR
 
     inner class SequenceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(sequence: Sequence) {
-            itemView.itemSequenceNameTv.text = "Courses"
-            itemView.itemSequenceGoToList.setOnClickListener {
+            //itemView.itemSequenceNameTv.text = "Courses"
+           /* itemView.itemSequenceGoToList.setOnClickListener {
                     onClickItemResultEvent.invoke(sequence)
-            }
+            }*/
 
             itemView.setOnClickListener {
                 onClickResultEvent.invoke(sequence)

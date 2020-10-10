@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmentTutorialInfoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:fontFamily="@font/inter_font"
+        android:gravity="center"
+        android:text="You’ll be asked 10 Ayahs\n\n You have to guess the ayah next to it\n\n Say the Ayah out loud\n\nThen see if you got it right"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xxlarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentCreateVoruttonTutot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_green_no_border"
+        android:layout_marginTop="@dimen/margin_xxxlarge"
+        android:text="Start"
+        android:textSize="@dimen/text_medium"
+        android:padding="@dimen/margin_medium"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTutorialInfoTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentCreateVoruTutot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_green_no_border"
+        android:padding="@dimen/margin_medium"
+        android:text="Return to Main Page"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentCreateVoruttonTutot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

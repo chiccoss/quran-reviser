@@ -10,5 +10,5 @@ sealed class QuranResult: ResultType {
     data class GotAyahTafseer(val verseTafseer: VerseTafseer): QuranResult()
     data class QuranError(val error: Error): QuranResult()
 
-
+    object InitApplication: QuranResult()
 }
