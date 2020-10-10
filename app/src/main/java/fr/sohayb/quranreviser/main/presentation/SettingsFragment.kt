@@ -75,7 +75,7 @@ class SettingsFragment : BaseFragment() {
     override fun render(appState: AppState) {
         appState.quranState.currentAyah?.let {
 
-            Toast.makeText(requireContext(), it.ayahText, Toast.LENGTH_LONG).show()
+            //Toast.makeText(requireContext(), it.ayahText, Toast.LENGTH_LONG).show()
         }
     }
 

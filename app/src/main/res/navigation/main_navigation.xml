@@ -11,6 +11,14 @@
         android:name="fr.sohayb.quranreviser.main.presentation.HomeFragment"
         tools:layout="@layout/fragment_home">
 
+
+        <action
+            android:id="@+id/goToTutorialFragment"
+            app:destination="@id/tutorialPage"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
 
@@ -19,6 +27,29 @@
         android:label="Settings"
         android:name="fr.sohayb.quranreviser.main.presentation.SettingsFragment"
         tools:layout="@layout/fragment_settings">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_tafseer"
+        android:name="fr.sohayb.quranreviser.main.presentation.TafseerFragment"
+        android:label="Tafseer"
+        tools:layout="@layout/fragment_tafseer">
+
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialPage"
+        android:name="fr.sohayb.quranreviser.main.presentation.TutorialFragment"
+        tools:layout="@layout/fragment_tutorial_page">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/evaluationPage"
+        android:name="fr.sohayb.quranreviser.main.presentation.TutorialFragment"
+        tools:layout="@layout/fragment_tutorial_page">
 
     </fragment>
 

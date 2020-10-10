@@ -38,7 +38,7 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
 
     override fun render(appState: AppState) {
         appState.quranState.currentAyah?.let {
-            Toast.makeText(this,it.ayahText,Toast.LENGTH_LONG).show()
+            //Toast.makeText(this,it.ayahText,Toast.LENGTH_LONG).show()
         }
     }
 
@@ -56,7 +56,7 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
         arguments: Bundle?
     ) {
         when(destination.id){
-            R.id.navigation_home,R.id.navigation_settings -> {
+            R.id.navigation_home,R.id.navigation_settings,R.id.navigation_tafseer -> {
                 activityMainBottomNavView.visibility = View.VISIBLE
             }
             else -> {

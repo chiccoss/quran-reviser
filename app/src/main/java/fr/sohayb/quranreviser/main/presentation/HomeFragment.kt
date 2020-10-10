@@ -155,7 +155,7 @@ class HomeFragment : BaseFragment() {
 
     override fun render(appState: AppState) {
         appState.quranState.currentAyah?.let {
-            Toast.makeText(requireContext(), it.ayahText, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(requireContext(), it.ayahText, Toast.LENGTH_SHORT).show()
         }
     }
 

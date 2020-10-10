@@ -17,7 +17,7 @@ import fr.sohayb.quranreviser.main.domain.QuranAction
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_tutorial_page.*
 
-class TutorialFragment : BaseFragment() {
+class TafseerFragment : BaseFragment() {
 
         val sequenceAdapter = SuraAdapter(::onClickResultEvent, ::onLongClickResultEvent)
 
@@ -25,15 +25,13 @@ class TutorialFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_tutorial_page, container, false)
+    ): View? = inflater.inflate(R.layout.fragment_tafseer, container, false)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        fragmentCreateVoruttonTutot.setOnClickListener {
-            findNavController().navigate(R.id.goToTutorialFragment)
-        }
+
     }
 
 

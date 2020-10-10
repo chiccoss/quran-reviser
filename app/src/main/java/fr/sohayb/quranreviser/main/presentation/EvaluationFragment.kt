@@ -13,11 +13,9 @@ import fr.sohayb.quranreviser.base.presentation.BaseFragment
 import fr.sohayb.quranreviser.main.adapter.SuraAdapter
 import fr.sohayb.quranreviser.main.adapter.TafseerAdapter
 import fr.sohayb.quranreviser.main.data.Sura
-import fr.sohayb.quranreviser.main.domain.QuranAction
-import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_tutorial_page.*
+import kotlinx.android.synthetic.main.fragment_evaluation.*
 
-class TutorialFragment : BaseFragment() {
+class EvaluationFragment : BaseFragment() {
 
         val sequenceAdapter = SuraAdapter(::onClickResultEvent, ::onLongClickResultEvent)
 
@@ -25,15 +23,13 @@ class TutorialFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_tutorial_page, container, false)
+    ): View? = inflater.inflate(R.layout.fragment_evaluation, container, false)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        fragmentCreateVoruttonTutot.setOnClickListener {
-            findNavController().navigate(R.id.goToTutorialFragment)
-        }
+
     }
 
 
