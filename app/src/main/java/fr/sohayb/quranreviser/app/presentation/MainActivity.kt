@@ -3,18 +3,22 @@ package fr.sohayb.quranreviser.app.presentation
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupWithNavController
 import fr.sohayb.quranreviser.R
 import fr.sohayb.quranreviser.app.domain.AppState
 import fr.sohayb.quranreviser.base.presentation.BaseActivity
 import fr.sohayb.quranreviser.main.domain.QuranAction
 import kotlinx.android.synthetic.main.activity_main.*
+import timber.log.Timber
+
 
 class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener {
 
@@ -32,13 +36,16 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //viewModel.dispatch(QuranAction.GetAyahTafseer(1, 2, 2))
+        viewModel.dispatch(QuranAction.GetNumberOfAyat)
         setupNavigation()
     }
 
     override fun render(appState: AppState) {
-        appState.quranState.currentAyah?.let {
-            //Toast.makeText(this,it.ayahText,Toast.LENGTH_LONG).show()
+        appState.quranState.listOfSuras?.let {quranResponse ->
+            quranResponse.data.forEach {
+                Timber.i(it.numberOfAyahs.toString(),"")
+
+            }
         }
     }
 

@@ -11,6 +11,7 @@ class QuranReducer: ReducerType<QuranState> {
         return when (result) {
             is QuranResult.GotAyahTafseer -> state.copy(currentAyah = result.verseTafseer)
             is QuranResult.InitApplication -> state.copy(goToMainActivity = BooleanOneTimeEvent(true))
+            is QuranResult.GotAyatInSura -> state.copy(listOfSuras = result.response)
 
             else -> state
         }

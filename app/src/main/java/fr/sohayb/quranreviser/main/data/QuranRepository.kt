@@ -2,6 +2,7 @@ package fr.sohayb.quranreviser.main.data
 
 import android.content.Context
 import fr.sohayb.quranreviser.app.api.Resource
+import fr.sohayb.quranreviser.app.api.response.QuranApiResponse
 import fr.sohayb.quranreviser.app.data.NetworkDataSource
 import okhttp3.ResponseBody
 
@@ -17,6 +18,16 @@ class QuranRepository(
         return networkDataSource.getAyahTafseer( tafseerId , suraNumber , ayahId )
 
     }
+
+
+    suspend fun getAyahtInSura(): Resource<QuranApiResponse> {
+        //val forgotPasswordData = ForgotPasswordData(email)
+
+        return networkDataSource.getAyahtInSura(  )
+
+    }
+
+
 
 
 }

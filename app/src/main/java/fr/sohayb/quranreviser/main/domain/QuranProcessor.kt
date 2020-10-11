@@ -26,7 +26,9 @@ class QuranProcessor(
                 is QuranAction.InitApplication -> {
                     initApplication(next)
                 }
-
+                is QuranAction.GetNumberOfAyat -> {
+                    getAyahtInSura(next)
+                }
 
             }
         }
@@ -52,5 +54,18 @@ class QuranProcessor(
             }
         }
     }
+
+    suspend fun getAyahtInSura(
+        next: ProcessorResultCallback
+    ) {
+        quranRepository.getAyahtInSura().apply {
+            when (this) {
+                is Resource.Success -> next(QuranResult.GotAyatInSura(data))
+                is Resource.Error -> next(QuranResult.QuranError(error))
+            }
+        }
+    }
+
+
 
 }
