@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_settings.*
 class SettingsFragment : BaseFragment() {
 
 
-    val sequenceAdapter = TafseerAdapter(::onClickResultEvent, ::onClickGoToListResultEvent)
+   // val sequenceAdapter = TafseerAdapter(::onClickResultEvent, ::onClickGoToListResultEvent)
 
     val sequenceList = listOf(
         Sequence(0, "Courses"),
@@ -73,7 +73,7 @@ class SettingsFragment : BaseFragment() {
 
 
     override fun render(appState: AppState) {
-        appState.quranState.currentAyah?.let {
+        appState.quranState.ayahTafseer?.let {
 
             //Toast.makeText(requireContext(), it.ayahText, Toast.LENGTH_LONG).show()
         }

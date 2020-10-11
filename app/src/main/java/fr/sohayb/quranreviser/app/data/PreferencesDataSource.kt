@@ -3,7 +3,7 @@ package fr.sohayb.quranreviser.app.data
 import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.GsonBuilder
-import fr.sohayb.quranreviser.app.data.SavedFilterPreferences
+import fr.sohayb.quranreviser.app.data.CurrentTafseerPreferences
 import fr.sohayb.quranreviser.R
 
 class PreferencesDataSource(private val context: Context) {
@@ -11,45 +11,12 @@ class PreferencesDataSource(private val context: Context) {
     private val preferences: SharedPreferences =
         context.getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE)
 
-    private val tagConnectedKeys = "ConnectedKeys"
-    private val tagTokenExpiration = "TokenExpiration"
+    private val tagCurrentTafseer = "CurrentTafseer"
     private val tagTutorialAlreadySeen = "TutorialAlreadySeen"
-    private val tagNeedAddCar = "NeedAddCar"
-    private val tagSubscriptionFilter = "SubscriptionFilter"
-    private val tagSavedFilter = "SavedFilter"
+
 
     //region Authorization
 
-    var tokenJwt: String?
-        get() {
-            return preferences.getString(tagConnectedKeys, null)
-        }
-        set(value) {
-            preferences.edit()
-                .putString(tagConnectedKeys, value)
-                .apply()
-        }
-
-
-   /* fun getBearerToken(): String? {
-        return tokenJwt?.let { context.getString(R.string.ws_token, it) }
-    }*/
-
-    var tokenExpiration: Long
-        get() {
-            return preferences.getLong(tagTokenExpiration, -1L)
-        }
-        set(value) {
-            preferences.edit()
-                .putLong(tagTokenExpiration, value)
-                .apply()
-        }
-
-    fun tokenHasExpired(): Boolean {
-        return if(tokenExpiration == -1L) false else tokenExpiration <= System.currentTimeMillis()
-    }
-
-    //endregion
 
     //region Tutorial
 
@@ -66,31 +33,31 @@ class PreferencesDataSource(private val context: Context) {
     //endregion
 
     //region Add Car
-
-    var needAddCar: Boolean
+/*
+    var currentTafseer: String
         get() {
-            return preferences.getBoolean(tagNeedAddCar, true)
+            return preferences.getString(tagCurrentTafseer,null).toString()
         }
         set(value) {
             preferences.edit()
-                .putBoolean(tagNeedAddCar, value)
+                .putString(tagCurrentTafseer, value)
                 .apply()
         }
-
+*/
     //endregion
 
     //region Filter
 
-    var savedFilter: SavedFilterPreferences?
+    var currentTafseer: CurrentTafseerPreferences?
         get() {
-            return getObject<SavedFilterPreferences>(tagSavedFilter)
+            return getObject<CurrentTafseerPreferences>(tagCurrentTafseer)
         }
         set(value) {
-            putObject(value, tagSavedFilter)
+            putObject(value, tagCurrentTafseer)
         }
 
-    fun saveFilter(savedFilter: SavedFilterPreferences): Boolean {
-        return putObject(savedFilter, tagSavedFilter)
+    fun saveTafseer(savedTafseer: CurrentTafseerPreferences): Boolean {
+        return putObject(savedTafseer, tagCurrentTafseer)
     }
 
     //endregion
@@ -109,12 +76,6 @@ class PreferencesDataSource(private val context: Context) {
         //We convert this JSON String to model object. Parameter "c" (of
         //type Class < T >" is used to cast.
         return GsonBuilder().create().fromJson(value, T::class.java)
-    }
-
-    fun cleanData(){
-        tokenJwt = null
-        tokenExpiration = -1L
-        savedFilter = null
     }
 
 }

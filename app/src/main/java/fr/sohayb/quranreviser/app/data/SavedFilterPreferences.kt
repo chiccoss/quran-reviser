@@ -1,8 +1,21 @@
 package fr.sohayb.quranreviser.app.data
 
-import android.text.SpannableString
-import java.util.*
+import fr.sohayb.quranreviser.main.data.Tafseer
 
-data class SavedFilterPreferences (
-    val favorites: Boolean? = null
-)
+data class CurrentTafseerPreferences(
+    val id: Int,
+    val name: String,
+    val language: String,
+    val author: String,
+    val book_name: String
+){
+    fun toTafseer() : Tafseer{
+        return Tafseer(
+            id,
+            name,
+            language,
+            author,
+            book_name
+        )
+    }
+}

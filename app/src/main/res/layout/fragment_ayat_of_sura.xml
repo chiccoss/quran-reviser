@@ -11,7 +11,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/fragmentHomeChangeTafseerInfoCl"
+            android:id="@+id/fragmentAyahOfSuraChangeAyahOfSuraInfoCl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/cl_background"
@@ -19,13 +19,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/fragmentHomeChangeTafseerInfoTv"
+                android:id="@+id/fragmentAyahOfSuraChangeAyahOfSuraInfoTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/margin_large"
                 android:fontFamily="@font/inter_font"
                 android:gravity="center"
-                android:text="Select Sura"
+                android:text="Select Ayah"
                 android:textColor="@color/colorQuartary"
                 android:textSize="@dimen/text_xxlarge"
                 android:textStyle="bold"
@@ -36,12 +36,28 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+        <EditText
+            android:id="@+id/fragmentAddSequenceEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="Number of ayah"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="text"
+            android:lines="1"
+            app:layout_constraintTop_toBottomOf="@id/fragmentAyahOfSuraChangeAyahOfSuraInfoCl" />
+
+
+
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/fragmentHomeQuranListRv"
+            android:id="@+id/fragmentAyahOfSuraQuranListRv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/fragmentHomeChangeTafseerInfoCl" />
+            app:layout_constraintTop_toBottomOf="@+id/fragmentAddSequenceEt" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
