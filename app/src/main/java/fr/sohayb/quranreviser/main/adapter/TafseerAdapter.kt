@@ -7,51 +7,55 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import fr.sohayb.quranreviser.R
-import fr.sohayb.quranreviser.app.models.Sequence
+import fr.sohayb.quranreviser.main.data.Sura
 import kotlinx.android.synthetic.main.item_sura.view.*
+import kotlinx.android.synthetic.main.item_tafseer_fragment_sura.view.*
 
 
-class TafseerAdapter(val onClickResultEvent: (Sequence) -> Unit,val onClickItemResultEvent: (Sequence) -> Unit) :
-    ListAdapter<Sequence, TafseerAdapter.SequenceViewHolder>(
+class TafseerAdapter(val onClickResultEvent: (Sura) -> Unit,val onClickItemResultEvent: (Sura) -> Unit) :
+    ListAdapter<Sura, TafseerAdapter.SuraViewHolder>(
         DiffItemCallback()
     ) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SequenceViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuraViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_sura, parent, false)
-        return SequenceViewHolder(view)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_tafseer_fragment_sura, parent, false)
+        return SuraViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: SequenceViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SuraViewHolder, position: Int) {
         holder.bind(getItem(position))
     }
 
-    inner class SequenceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(sequence: Sequence) {
-            //itemView.itemSequenceNameTv.text = "Courses"
-           /* itemView.itemSequenceGoToList.setOnClickListener {
+    inner class SuraViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(sura: Sura) {
+            //itemView.itemSuraNameTv.text = "Courses"
+           /* itemView.itemSuraGoToList.setOnClickListener {
                     onClickItemResultEvent.invoke(sequence)
             }*/
+            itemView.itemTafseerSuraNameTv.text = sura.name
+
+            itemView.itemTafseerSuraAyatNumberTv.text = sura.numberOfVerses.toString()
 
             itemView.setOnClickListener {
-                onClickResultEvent.invoke(sequence)
+                onClickResultEvent.invoke(sura)
             }
         }
     }
 
-    class DiffItemCallback : DiffUtil.ItemCallback<Sequence>() {
+    class DiffItemCallback : DiffUtil.ItemCallback<Sura>() {
         override fun areContentsTheSame(
-            oldItem: Sequence,
-            newItem: Sequence
+            oldItem: Sura,
+            newItem: Sura
         ): Boolean {
             return oldItem == newItem
         }
 
         override fun areItemsTheSame(
-            oldItem: Sequence,
-            newItem: Sequence
+            oldItem: Sura,
+            newItem: Sura
         ): Boolean {
-            return oldItem.uid == newItem.uid
+            return oldItem.id == newItem.id
         }
     }
 }

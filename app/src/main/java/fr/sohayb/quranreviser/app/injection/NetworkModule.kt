@@ -59,7 +59,7 @@ val NetworkModule = module {
         val url = "http://api.quran-tafseer.com/"
         Retrofit.Builder()
             .client(get())
-            .baseUrl(quranUrl)
+            .baseUrl(url)
             .addConverterFactory(
                 Json(
                     JsonConfiguration(

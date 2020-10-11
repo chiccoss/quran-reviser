@@ -35,7 +35,7 @@
         android:id="@+id/navigation_tafseer"
         android:name="fr.sohayb.quranreviser.main.presentation.TafseerFragment"
         android:label="Tafseer"
-        tools:layout="@layout/fragment_tafseer">
+        tools:layout="@layout/fragment_suras_tafseer">
 
     </fragment>
     <fragment
@@ -43,15 +43,28 @@
         android:name="fr.sohayb.quranreviser.main.presentation.TutorialFragment"
         tools:layout="@layout/fragment_tutorial_page">
 
+        <action
+            android:id="@+id/goToEvaluationPage"
+            app:destination="@id/evaluationPage" />
     </fragment>
 
 
     <fragment
         android:id="@+id/evaluationPage"
-        android:name="fr.sohayb.quranreviser.main.presentation.TutorialFragment"
-        tools:layout="@layout/fragment_tutorial_page">
+        android:name="fr.sohayb.quranreviser.main.presentation.EvaluationFragment"
+        tools:layout="@layout/fragment_evaluation">
 
     </fragment>
+
+
+    <fragment
+        android:id="@+id/ayatOfSura"
+        android:name="fr.sohayb.quranreviser.main.presentation.AyahOfSuraFragment"
+        tools:layout="@layout/fragment_ayat_of_sura">
+
+    </fragment>
+
+
 
 
 

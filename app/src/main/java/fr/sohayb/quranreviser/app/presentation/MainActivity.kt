@@ -16,8 +16,9 @@ import fr.sohayb.quranreviser.R
 import fr.sohayb.quranreviser.app.domain.AppState
 import fr.sohayb.quranreviser.base.presentation.BaseActivity
 import fr.sohayb.quranreviser.main.domain.QuranAction
+import fr.sohayb.quranreviser.utils.Constants.Companion.FROM_TAFSEER_FRAGMENT
+import fr.sohayb.quranreviser.utils.Constants.Companion.FROM_TEST_FRAGMENT
 import kotlinx.android.synthetic.main.activity_main.*
-import timber.log.Timber
 
 
 class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener {
@@ -36,18 +37,11 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        viewModel.dispatch(QuranAction.GetNumberOfAyat)
+        //viewModel.dispatch(QuranAction.GetNumberOfAyat)
         setupNavigation()
     }
 
-    override fun render(appState: AppState) {
-        appState.quranState.listOfSuras?.let {quranResponse ->
-            quranResponse.data.forEach {
-                Timber.i(it.numberOfAyahs.toString(),"")
-
-            }
-        }
-    }
+    override fun render(appState: AppState) = Unit
 
     private fun setupNavigation() {
         navController = findNavController(R.id.activityMainNavHostFragment)
@@ -80,5 +74,17 @@ class MainActivity : BaseActivity(), NavController.OnDestinationChangedListener 
     override fun onPause() {
         super.onPause()
         navController.removeOnDestinationChangedListener(this)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        when(resultCode){
+                 FROM_TEST_FRAGMENT ->{
+
+                 }
+                 FROM_TAFSEER_FRAGMENT->{
+
+                 }
+        }
     }
 }

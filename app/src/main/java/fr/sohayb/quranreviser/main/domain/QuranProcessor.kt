@@ -17,6 +17,7 @@ class QuranProcessor(
     override suspend fun process(action: ActionType, next: ProcessorResultCallback) {
         (action as? QuranAction)?.let {
             when (it) {
+                is QuranAction.GetCurrentTafseer -> next(QuranResult.GotCurrentTafseer(quranRepository.getCurrentTafseer()))
                 is QuranAction.GetAyahTafseer -> getAyahTafseer(
                     it.tafseerId,
                     it.suraNumber,

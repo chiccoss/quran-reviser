@@ -9,10 +9,10 @@ class QuranReducer: ReducerType<QuranState> {
 
     override fun reduce(result: ResultType, state: QuranState): QuranState {
         return when (result) {
-            is QuranResult.GotAyahTafseer -> state.copy(currentAyah = result.verseTafseer)
+            is QuranResult.GotAyahTafseer -> state.copy(ayahTafseer = result.verseTafseer)
             is QuranResult.InitApplication -> state.copy(goToMainActivity = BooleanOneTimeEvent(true))
+            is QuranResult.GotCurrentTafseer -> state.copy(currentTafseer = result.currentTafseer)
             is QuranResult.GotAyatInSura -> state.copy(listOfSuras = result.response)
-
             else -> state
         }
 

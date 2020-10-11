@@ -37,7 +37,7 @@ class AyahOfSuraFragment : BaseFragment() {
 
 
     override fun render(appState: AppState) {
-        appState.quranState.currentAyah?.let {
+        appState.quranState.ayahTafseer?.let {
 
         }
     }

@@ -33,6 +33,9 @@ class SuraAdapter(
         fun bind(sura: Sura) {
             itemView.itemSuraNameTv.text = sura.name
 
+            itemView.itemSuraAyatNumberTv.text = sura.numberOfVerses.toString()
+
+
             itemView.setOnClickListener {
                 onClickResultEvent.invoke(sura)
             }

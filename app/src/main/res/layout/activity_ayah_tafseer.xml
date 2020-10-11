@@ -7,8 +7,8 @@
 
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/fragmev"
-        android:layout_width="0dp"
+        android:id="@+id/activityAyahTafseerTafseerNameTv"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_large"
         android:fontFamily="@font/inter_font"
@@ -22,46 +22,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/fragmentCreateVoruttonTutot"
+        android:id="@+id/activityAyahTafseerAyahTextTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="16dp"
+        android:clickable="false"
         android:layout_marginTop="@dimen/margin_xxxlarge"
-        android:text="Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah"
+        android:text="Ayah"
         android:textSize="@dimen/text_medium"
         android:padding="@dimen/margin_medium"
-        app:layout_constraintTop_toBottomOf="@+id/fragmev"
+        app:layout_constraintTop_toBottomOf="@+id/activityAyahTafseerTafseerNameTv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/fragmentCreateVoruTutot"
+        android:id="@+id/activityAyahTafseerTafseerTextTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginEnd="16dp"
         android:padding="@dimen/margin_medium"
+        android:clickable="false"
         android:text="Tafseer of Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah Ayah"
         android:textSize="@dimen/text_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentCreateVoruttonTutot" />
+        app:layout_constraintTop_toBottomOf="@+id/activityAyahTafseerAyahTextTv" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/fragmentCreatoruTutot"
+        android:id="@+id/activityAyahTafseerBackButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="16dp"
         android:padding="@dimen/margin_medium"
         android:text="Back"
+        android:layout_marginTop="@dimen/margin_xxxlarge"
         android:textSize="@dimen/text_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentCreateVoruTutot" />
+        app:layout_constraintTop_toBottomOf="@+id/activityAyahTafseerTafseerTextTv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
