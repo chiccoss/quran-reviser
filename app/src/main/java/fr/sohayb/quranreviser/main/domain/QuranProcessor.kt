@@ -17,6 +17,7 @@ class QuranProcessor(
     override suspend fun process(action: ActionType, next: ProcessorResultCallback) {
         (action as? QuranAction)?.let {
             when (it) {
+                is QuranAction.GetCurrentTafseer -> next(QuranResult.GotCurrentTafseer(quranRepository.getCurrentTafseer()))
                 is QuranAction.GetAyahTafseer -> getAyahTafseer(
                     it.tafseerId,
                     it.suraNumber,
@@ -26,7 +27,9 @@ class QuranProcessor(
                 is QuranAction.InitApplication -> {
                     initApplication(next)
                 }
-
+                is QuranAction.GetNumberOfAyat -> {
+                    getAyahtInSura(next)
+                }
 
             }
         }
@@ -52,5 +55,18 @@ class QuranProcessor(
             }
         }
     }
+
+    suspend fun getAyahtInSura(
+        next: ProcessorResultCallback
+    ) {
+        quranRepository.getAyahtInSura().apply {
+            when (this) {
+                is Resource.Success -> next(QuranResult.GotAyatInSura(data))
+                is Resource.Error -> next(QuranResult.QuranError(error))
+            }
+        }
+    }
+
+
 
 }

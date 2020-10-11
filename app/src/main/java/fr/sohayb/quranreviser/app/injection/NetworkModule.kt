@@ -55,7 +55,7 @@ val NetworkModule = module {
     }
 
     single<Retrofit> {
-
+        val quranUrl = "http://api.alquran.cloud/"
         val url = "http://api.quran-tafseer.com/"
         Retrofit.Builder()
             .client(get())

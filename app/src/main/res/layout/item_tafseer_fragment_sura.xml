@@ -9,13 +9,13 @@
     android:layout_marginTop="@dimen/margin_micro">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/itemSuraNameTv"
+        android:id="@+id/itemTafseerSuraNameTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_medium"
         android:padding="@dimen/margin_medium"
         android:text="Al Fatiha"
-        app:layout_constraintEnd_toStartOf="@+id/itemSuraAyatNumberTv"
+        app:layout_constraintEnd_toStartOf="@+id/itemTafseerSuraAyatNumberTv"
         android:textColor="#000000"
         android:textSize="@dimen/text_medium"
         android:textStyle="bold"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/itemSuraAyatNumberTv"
+        android:id="@+id/itemTafseerSuraAyatNumberTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_medium"

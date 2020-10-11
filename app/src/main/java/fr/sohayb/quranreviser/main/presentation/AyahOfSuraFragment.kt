@@ -13,9 +13,12 @@ import fr.sohayb.quranreviser.base.presentation.BaseFragment
 import fr.sohayb.quranreviser.main.adapter.SuraAdapter
 import fr.sohayb.quranreviser.main.adapter.TafseerAdapter
 import fr.sohayb.quranreviser.main.data.Sura
-import kotlinx.android.synthetic.main.fragment_evaluation.*
+import fr.sohayb.quranreviser.main.domain.QuranAction
+import kotlinx.android.synthetic.main.fragment_ayat_of_sura.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_tutorial_page.*
 
-class EvaluationFragment : BaseFragment() {
+class AyahOfSuraFragment : BaseFragment() {
 
         val sequenceAdapter = SuraAdapter(::onClickResultEvent, ::onLongClickResultEvent)
 
@@ -23,13 +26,13 @@ class EvaluationFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_evaluation, container, false)
+    ): View? = inflater.inflate(R.layout.fragment_ayat_of_sura, container, false)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        //fragmentAyahOfSuraQuranListRv.
     }
 
 

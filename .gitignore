@@ -1,3 +1,4 @@
+
 # Created by https://www.gitignore.io/api/java,gradle,kotlin,android,androidstudio
 # Edit at https://www.gitignore.io/?templates=java,gradle,kotlin,android,androidstudio
 
@@ -255,3 +256,5 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.gitignore.io/api/java,gradle,kotlin,android,androidstudio
+.idea
+

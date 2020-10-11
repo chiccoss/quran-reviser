@@ -10,7 +10,7 @@ import org.koin.dsl.module
 
 val QuranModule = module {
 
-    single { QuranRepository(get(),get()) }
+    single { QuranRepository(get(),get(),get()) }
 
     single { QuranProcessor(get(),get()) }
 
