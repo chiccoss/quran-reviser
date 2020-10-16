@@ -18,6 +18,7 @@ interface NetworkService {
     ): VerseTafseerResponse
 
 
+
     @GET("v1/surah")
     suspend fun getAyahtInSura(
     ): QuranApiResponse
