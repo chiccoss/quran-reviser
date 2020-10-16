@@ -1,5 +1,5 @@
 package fr.sohayb.quranreviser.experimental
-
+/*
 import fr.sohayb.quranreviser.main.domain.MainResult
 import fr.sohayb.quranreviser.main.mocks.MockMainRepositoryFails
 import fr.sohayb.quranreviser.main.mocks.MockMainRepositorySucceeds
@@ -73,4 +73,4 @@ class ExperimentalProcessorUnitTests {
         Assert.assertEquals("<DOCTYPEhtmlgr5Longe", result)
     }
 
-}
+}*/

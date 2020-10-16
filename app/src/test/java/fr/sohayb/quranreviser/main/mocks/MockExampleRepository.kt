@@ -1,5 +1,5 @@
 package fr.sohayb.quranreviser.main.mocks
-
+/*
 import fr.sohayb.quranreviser.main.data.MainRepository
 import java.net.URL
 
@@ -14,4 +14,4 @@ class MockMainRepositoryFails: MainRepository {
     override fun downloadWebPageAtURL(url: URL): Result<String> {
         return Result.failure(RuntimeException("TestRepositoryImplFails"))
     }
-}
+}*/
