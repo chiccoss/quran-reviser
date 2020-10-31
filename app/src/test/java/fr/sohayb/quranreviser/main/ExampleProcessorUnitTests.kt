@@ -1,5 +1,5 @@
 package fr.sohayb.quranreviser.main
-
+/*
 import fr.sohayb.quranreviser.main.domain.MainAction
 import fr.sohayb.quranreviser.main.domain.MainProcessor
 import fr.sohayb.quranreviser.main.domain.MainResult
@@ -90,3 +90,4 @@ class MainProcessorUnitTests {
     }
 }
 
+*/
