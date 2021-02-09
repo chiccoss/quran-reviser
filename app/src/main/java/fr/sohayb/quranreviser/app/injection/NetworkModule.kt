@@ -61,12 +61,10 @@ val NetworkModule = module {
             .client(get())
             .baseUrl(url)
             .addConverterFactory(
-                Json(
-                    JsonConfiguration(
-                        ignoreUnknownKeys = true,
+                Json{
+                        ignoreUnknownKeys = true
                         isLenient = true
-                    )
-                ).asConverterFactory("application/json".toMediaType())
+                }.asConverterFactory("application/json".toMediaType())
             )
             .build()
     }
