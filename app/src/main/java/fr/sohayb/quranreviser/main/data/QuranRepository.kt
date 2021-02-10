@@ -6,6 +6,7 @@ import fr.sohayb.quranreviser.app.api.response.QuranApiResponse
 import fr.sohayb.quranreviser.app.data.CurrentTafseerPreferences
 import fr.sohayb.quranreviser.app.data.NetworkDataSource
 import fr.sohayb.quranreviser.app.data.PreferencesDataSource
+import fr.sohayb.quranreviser.app.models.QuranResponse
 import okhttp3.ResponseBody
 
 class QuranRepository(
@@ -53,6 +54,13 @@ class QuranRepository(
         return networkDataSource.getAyahtInSura(  )
 
     }
+
+    suspend fun getQuran(): Resource<QuranResponse> {
+        //val forgotPasswordData = ForgotPasswordData(email)
+        return networkDataSource.getQuran()
+    }
+
+
 
 
 

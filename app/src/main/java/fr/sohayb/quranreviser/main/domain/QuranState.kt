@@ -1,8 +1,10 @@
 package fr.sohayb.quranreviser.main.domain
 
 import fr.sohayb.quranreviser.app.api.response.QuranApiResponse
+import fr.sohayb.quranreviser.app.models.QuranResponse
 import fr.sohayb.quranreviser.base.domain.StateType
 import fr.sohayb.quranreviser.base.util.BooleanOneTimeEvent
+import fr.sohayb.quranreviser.base.util.OneTimeEvent
 import fr.sohayb.quranreviser.main.data.Ayah
 import fr.sohayb.quranreviser.main.data.Sura
 import fr.sohayb.quranreviser.main.data.Tafseer
@@ -18,6 +20,8 @@ data class QuranState(
     val currentSura: Sura? = null,
     val currentTestAyah: Ayah? = null,
     val goToMainActivity : BooleanOneTimeEvent = BooleanOneTimeEvent(false),
-    val listOfSuras : QuranApiResponse? = null
+    val listOfSuras : QuranApiResponse? = null,
+    val quran : OneTimeEvent<QuranResponse?> = OneTimeEvent(null),
+    val isLoading : Boolean = false
 
 ) : StateType

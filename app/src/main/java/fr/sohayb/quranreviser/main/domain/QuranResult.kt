@@ -1,6 +1,7 @@
 package fr.sohayb.quranreviser.main.domain
 
 import fr.sohayb.quranreviser.app.api.response.QuranApiResponse
+import fr.sohayb.quranreviser.app.models.QuranResponse
 import fr.sohayb.quranreviser.base.error.Error
 import fr.sohayb.quranreviser.base.domain.ResultType
 import fr.sohayb.quranreviser.main.data.Tafseer
@@ -14,7 +15,9 @@ sealed class QuranResult: ResultType {
     data class GotCurrentTafseer(val currentTafseer: Tafseer?): QuranResult()
 
     data class GotAyatInSura(val response: QuranApiResponse): QuranResult()
+    data class GotQuran(val quran: QuranResponse): QuranResult()
 
 
     object InitApplication: QuranResult()
+    object IsLoading : QuranResult()
 }
