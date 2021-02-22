@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,7 +12,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/fragmentHomeChangeTafseerInfoCl"
+            android:id="@+id/fragmentSurahChangeSurahInfoCl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/cl_background"
@@ -19,13 +20,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/fragmentHomeChangeTafseerInfoTv"
+                android:id="@+id/fragmentSurahChangeSurahInfoTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/margin_large"
                 android:fontFamily="@font/inter_font"
                 android:gravity="center"
-                android:text="Select Sura"
+                tools:text="Select Sura"
                 android:textColor="@color/colorQuartary"
                 android:textSize="@dimen/text_xxlarge"
                 android:textStyle="bold"
@@ -37,21 +38,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/fragmentHomeQuranListRv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/fragmentHomeChangeTafseerInfoCl" />
-
-        <ProgressBar
-            android:id="@+id/progressBarHomeQuran"
+            android:id="@+id/fragmentSurahQuranListRv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentSurahChangeSurahInfoCl" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

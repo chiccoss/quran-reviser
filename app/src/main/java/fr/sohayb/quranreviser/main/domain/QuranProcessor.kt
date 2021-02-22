@@ -10,6 +10,7 @@ import kotlinx.coroutines.delay
 
 
 private const val SPLASH_DURATION = 1500L
+
 class QuranProcessor(
     val quranRepository: QuranRepository,
     private val context: Context
@@ -17,7 +18,11 @@ class QuranProcessor(
     override suspend fun process(action: ActionType, next: ProcessorResultCallback) {
         (action as? QuranAction)?.let {
             when (it) {
-                is QuranAction.GetCurrentTafseer -> next(QuranResult.GotCurrentTafseer(quranRepository.getCurrentTafseer()))
+                is QuranAction.GetCurrentTafseer -> next(
+                    QuranResult.GotCurrentTafseer(
+                        quranRepository.getCurrentTafseer()
+                    )
+                )
                 is QuranAction.GetAyahTafseer -> getAyahTafseer(
                     it.tafseerId,
                     it.suraNumber,
@@ -29,6 +34,9 @@ class QuranProcessor(
                 }
                 is QuranAction.GetNumberOfAyat -> {
                     getAyahtInSura(next)
+                }
+                is QuranAction.GetQuran -> {
+                    getQuran(next)
                 }
 
             }
@@ -68,5 +76,15 @@ class QuranProcessor(
     }
 
 
-
+    suspend fun getQuran(
+        next: ProcessorResultCallback
+    ) {
+        next(QuranResult.IsLoading)
+        /*quranRepository.getQuran().apply {
+            when (this) {
+                is Resource.Success -> next(QuranResult.GotQuran(data))
+                is Resource.Error -> next(QuranResult.QuranError(error))
+            }
+        }*/
+    }
 }

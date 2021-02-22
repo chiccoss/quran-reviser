@@ -3,18 +3,21 @@ package fr.sohayb.quranreviser.main.presentation
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import fr.sohayb.quranreviser.R
 import fr.sohayb.quranreviser.app.domain.AppState
+import fr.sohayb.quranreviser.app.models.Surah
 import fr.sohayb.quranreviser.base.presentation.BaseFragment
-import fr.sohayb.quranreviser.main.adapter.TafseerAdapter
-import fr.sohayb.quranreviser.main.data.Sura
-import fr.sohayb.quranreviser.utils.Constants
+import fr.sohayb.quranreviser.main.adapter.QuranAdapter
+import fr.sohayb.quranreviser.main.domain.QuranAction
+import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_suras_tafseer.*
 
-class TafseerFragment : BaseFragment() {
+class QuranFragment : BaseFragment() {
 
-    val sequenceAdapter = TafseerAdapter(::onClickResultEvent, ::onLongClickResultEvent)
+    val sequenceAdapter = QuranAdapter(::onClickResultEvent, ::onLongClickResultEvent)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,8 +28,9 @@ class TafseerFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel.dispatch(QuranAction.GetQuran)
+
         fragmentTafseerQuranListRv.adapter = sequenceAdapter
-        sequenceAdapter.submitList(Constants.surasList)
 
 
         //
@@ -38,19 +42,26 @@ class TafseerFragment : BaseFragment() {
 
 
     override fun render(appState: AppState) {
+        appState.quranState.quran.consume()?.let {
+            sequenceAdapter.submitList(it.data.surahs)
+            progressBarHomeQuran.visibility = GONE
+
+        }
         appState.quranState.ayahTafseer?.let {
             //Toast.makeText(requireContext(), it.ayahText, Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun onClickResultEvent(sura: Sura) {
+    private fun onClickResultEvent(sura: Surah) {
       //  viewModel.dispatch(QuranAction.GetAyahTafseer(1, sura.id, 1))
-
-        AyahTafseerActivity.start(context = requireContext(),activity = requireActivity(),surat = sura)
+        QuranFragmentDirections.goToShowSurahFragment(sura).also {
+            findNavController().navigate(it)
+        }
+       // AyahTafseerActivity.start(context = requireContext(),activity = requireActivity(),surat = sura)
 
     }
 
-    private fun onLongClickResultEvent(sura: Sura) {
+    private fun onLongClickResultEvent(sura: Surah) {
 
     }
 

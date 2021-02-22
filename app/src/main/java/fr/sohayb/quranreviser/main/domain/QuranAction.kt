@@ -10,6 +10,6 @@ sealed class QuranAction: ActionType {
     data class GetAyahTafseer(var tafseerId : Int,var suraNumber: Int,var ayahId: Int): QuranAction()
     object GetNumberOfAyat : QuranAction()
     data class GotAyah(val ayah: String): QuranAction()
-
+    object GetQuran : QuranAction()
 
 }

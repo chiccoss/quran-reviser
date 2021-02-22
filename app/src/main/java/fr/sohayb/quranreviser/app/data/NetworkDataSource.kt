@@ -5,6 +5,7 @@ import fr.sohayb.quranreviser.app.api.NetworkService
 import fr.sohayb.quranreviser.app.api.Resource
 import fr.sohayb.quranreviser.app.api.ResponseHandler
 import fr.sohayb.quranreviser.app.api.response.QuranApiResponse
+import fr.sohayb.quranreviser.app.models.QuranResponse
 import fr.sohayb.quranreviser.main.data.VerseTafseer
 
 class NetworkDataSource(private val networkService: NetworkService, context: Context) : ResponseHandler(context) {
@@ -29,6 +30,16 @@ class NetworkDataSource(private val networkService: NetworkService, context: Con
             handleException(e)
         }
     }
+
+
+    suspend fun getQuran(): Resource<QuranResponse> {
+        return try {
+            handleSuccess(networkService.getQuran())
+        } catch (e: Exception) {
+            handleException(e)
+        }
+    }
+
 
 
 

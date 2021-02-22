@@ -7,7 +7,6 @@ import fr.sohayb.quranreviser.app.api.NetworkService
 import fr.sohayb.quranreviser.app.api.TLSSocketFactory
 import fr.sohayb.quranreviser.app.error.ErrorInterceptor
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonConfiguration
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -59,14 +58,12 @@ val NetworkModule = module {
         val url = "http://api.quran-tafseer.com/"
         Retrofit.Builder()
             .client(get())
-            .baseUrl(url)
+            .baseUrl(quranUrl)
             .addConverterFactory(
-                Json(
-                    JsonConfiguration(
-                        ignoreUnknownKeys = true,
-                        isLenient = true
-                    )
-                ).asConverterFactory("application/json".toMediaType())
+                Json {
+                    ignoreUnknownKeys = true
+                    isLenient = true
+                }.asConverterFactory("application/json".toMediaType())
             )
             .build()
     }

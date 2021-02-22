@@ -1,5 +1,7 @@
 package fr.sohayb.quranreviser.main.adapter
 
+
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,19 +9,18 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import fr.sohayb.quranreviser.R
-import fr.sohayb.quranreviser.main.data.Sura
-import kotlinx.android.synthetic.main.item_sura.view.*
-import kotlinx.android.synthetic.main.item_tafseer_fragment_sura.view.*
+import fr.sohayb.quranreviser.app.models.Ayah
+import kotlinx.android.synthetic.main.item_aya.view.*
 
 
-class TafseerAdapter(val onClickResultEvent: (Sura) -> Unit,val onClickItemResultEvent: (Sura) -> Unit) :
-    ListAdapter<Sura, TafseerAdapter.SuraViewHolder>(
+class SurahAdapter(val onClickResultEvent: (Ayah) -> Unit, val onClickItemResultEvent: (Ayah) -> Unit) :
+    ListAdapter<Ayah, SurahAdapter.SuraViewHolder>(
         DiffItemCallback()
     ) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuraViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_tafseer_fragment_sura, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_aya, parent, false)
         return SuraViewHolder(view)
     }
 
@@ -28,34 +29,34 @@ class TafseerAdapter(val onClickResultEvent: (Sura) -> Unit,val onClickItemResul
     }
 
     inner class SuraViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(sura: Sura) {
+        fun bind(ayah: Ayah) {
             //itemView.itemSuraNameTv.text = "Courses"
-           /* itemView.itemSuraGoToList.setOnClickListener {
-                    onClickItemResultEvent.invoke(sequence)
-            }*/
-            itemView.itemTafseerSuraNameTv.text = sura.name
+            /* itemView.itemSuraGoToList.setOnClickListener {
+                     onClickItemResultEvent.invoke(sequence)
+             }*/
+            itemView.itemTafseerSuraNameTv.text = ayah.text
 
-            itemView.itemTafseerSuraAyatNumberTv.text = sura.numberOfVerses.toString()
+            itemView.itemTafseerSuraAyatNumberTv.text = ayah.number.toString()
 
             itemView.setOnClickListener {
-                onClickResultEvent.invoke(sura)
+                onClickResultEvent.invoke(ayah)
             }
         }
     }
 
-    class DiffItemCallback : DiffUtil.ItemCallback<Sura>() {
+    class DiffItemCallback : DiffUtil.ItemCallback<Ayah>() {
         override fun areContentsTheSame(
-            oldItem: Sura,
-            newItem: Sura
+            oldItem: Ayah,
+            newItem: Ayah
         ): Boolean {
             return oldItem == newItem
         }
 
         override fun areItemsTheSame(
-            oldItem: Sura,
-            newItem: Sura
+            oldItem: Ayah,
+            newItem: Ayah
         ): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem.number == newItem.number
         }
     }
 }
